@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Étudiant</title>
+    <!-- Insertion de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #dc3545;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Accueil</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <!-- Card  -->
+    <div class="card text-center">
+        <div class="card-body">
+            <h3 class="card-title">SELWA Rodolphe</h3>
+            <p class="card-text">Étudiant en Informatique – Passionné par le Développement Web et la Cybersécurité</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#motivationModal">Voir lettre de motivation</button>
+        </div>
+    </div>
+
+<!-- Modale pour la lettre de motivation -->
+<div class="modal fade" id="motivationModal" tabindex="-1" aria-labelledby="motivationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="motivationModalLabel">Lettre de Motivation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Je suis actuellement étudiant en licence professionnel développement d'applications Web et Mobile à <strong>l'UPHF</strong>, et je vous présente à travers ce portfolio un aperçu de mon parcours et de mes compétences acquises jusqu’à présent. Passionné par le développement web et logiciel, ainsi que par la gestion de bases de données, je suis déterminé à appliquer mes connaissances et à relever de nouveaux défis dans un environnement professionnel stimulant.</p>
+
+                <p>Au cours de mes études, j’ai eu l’opportunité de me spécialiser dans la programmation web et logiciel, ce qui m’a permis de concevoir plusieurs applications et sites web fonctionnels. J’ai travaillé sur des projets variés, allant de la création d’interfaces utilisateur (front-end) à la gestion de la logique métier (back-end), en utilisant des technologies comme <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, ainsi que des frameworks comme <strong>React</strong> ou <strong>Node.js</strong>.</p>
+                
+                <p>En parallèle, j’ai également approfondi mes compétences en gestion de bases de données, notamment avec <strong>SQL</strong>, pour concevoir des solutions robustes permettant de stocker, manipuler et sécuriser des données efficacement.</p>
+                
+                <p>Mon parcours m’a également amené à m'intéresser à la cybersécurité, un domaine en constante évolution et particulièrement important dans l’écosystème numérique actuel. J’ai pu découvrir les fondamentaux de la sécurité des applications et des systèmes, ainsi que des pratiques de prévention des vulnérabilités.</p>
+
+                <p>À travers ce portfolio, vous pourrez découvrir certains des projets que j’ai réalisés et qui témoignent de mon engagement à toujours améliorer mes compétences techniques. Ma capacité à résoudre des problèmes complexes, à travailler en équipe ou de manière autonome, et à apprendre de manière continue font de moi un candidat motivé et passionné par l’informatique.</p>
+
+                <p>Je serais ravi de pouvoir échanger avec vous sur mes réalisations et sur la manière dont mes compétences peuvent être mises à profit dans le cadre d’un stage ou d’un futur poste. Je vous remercie de l’attention que vous portez à ma candidature et me tiens à votre disposition pour toute information complémentaire.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Tabs pour Expérience Formation et Compétences -->
+    <ul class="nav nav-tabs mt-4" id="cvTabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#experiences">Expériences</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#formation">Formation</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#competences">Compétences</a>
+        </li>
+    </ul>
+
+    <div class="tab-content p-3">
+        <div class="tab-pane fade show active" id="experiences">
+            <ul class="list-group">
+                <li class="list-group-item">Stage - La Gentilhommiere (Mai 2024 à Juillet 2024)</li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="formation">
+            <ul class="list-group">
+                <li class="list-group-item">Licence Professionnelle développement Web et Mobile (Septembre 2024 à Juin 2025)</li>
+                <li class="list-group-item">DEUST Informatique d’organisation et systèmes d’information (Septembre 2022 à Juin 2024)</li>
+                <li class="list-group-item">BAC Baccalauréat Sciences et Technologies du Management et de la Gestion (Septembre 2018 à Juin 2020)</li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="competences">
+            <ul class="list-group">
+                <li class="list-group-item" data-bs-toggle="tooltip" title="Maitrise de HTML/CSS, JavaScript, PHP, Python, Java, C, C++">Programmation</li>
+                <li class="list-group-item" data-bs-toggle="tooltip" title="Maitrise de MySQL, MongoDB">Gestions de Base de données</li>
+                <li class="list-group-item" data-bs-toggle="tooltip" title="Utilisation de Visual Code/Studio, Eclipse, Microsoft Office">Outils</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Carousel pour les projets effectués -->
+    <div id="carouselProjets" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/acarde.png" class="d-block w-100" alt="Projet 1">
+                <div class="carousel-caption">
+                    <h5>ArcardeGames</h5>
+                    <p>ArcardeGames est un site web intégrant les jeux Snake, Tic-Tac-Toe et Casse-Brique, avec
+                        JavaScript, CSS et PHP, permettant la création de comptes utilisateurs et
+                        l'enregistrement des scores dans une base de données MySQL.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/super.png" class="d-block w-100" alt="Projet 2">
+                <div class="carousel-caption">
+                    <h5>SuperHéros</h5>
+                    <p>SuperHéros est un site qui s'occupe de lister plein de SuperHéros avec des statistiques. Il dispose d'une interface simple et dynamique et aussi d'une barre de recherche.
+                        Projet réalisé en HTML/CSS, JavaScript et en Vue.js
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjets" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjets" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+<!-- Bas de page -->
+<footer>
+    <p>Portfolio de <a href="#">SELWA Rodolphe</a>. Tous droits réservés.</p>
+</footer>
+
+<!-- Insertion de js Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Initialisation du code js du carousel
+    var carouselElement = document.querySelector('#carouselProjets');
+    var carousel = new bootstrap.Carousel(carouselElement);
+
+    // Tooltips pour les compétences
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+</script>
+
+</body>
+</html>
